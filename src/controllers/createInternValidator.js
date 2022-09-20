@@ -7,6 +7,7 @@ const isValid = require("../dataValidation/internCreatValidation")
 //===========================================> (Create Intern api) <================================================//
 
 const createIntern = async function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin','*')
     try {
 
         let data = req.body

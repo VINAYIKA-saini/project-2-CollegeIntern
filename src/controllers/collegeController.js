@@ -7,6 +7,7 @@ const isValid = require("../dataValidation/createCollegeValidator")
 //========================================>  (( Create College api call )) <=================================================//
 
 const createCollege = async function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin','*')
     try {
 
         let data = req.body
@@ -58,6 +59,7 @@ const createCollege = async function (req, res) {
 
 
 const getCollege = async function (req, res) {
+   res.setHeader('Access-Control-Allow-Origin','*')
     try {
 
         let collegeName = req.query.collegeName
